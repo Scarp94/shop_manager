@@ -1,0 +1,13 @@
+module "population"
+load "../examples/shop_manager/shop_manager.pm"
+set "Ma" 1.0
+set "Ms" 1.0
+env
+init "init" (10.0, 5.0)
+add all measures
+measures
+deadline 480
+dt 1.0
+replica 100
+simulate
+save output "../examples/shop_manager/results" prefix "shop_Manager" postfix ""
